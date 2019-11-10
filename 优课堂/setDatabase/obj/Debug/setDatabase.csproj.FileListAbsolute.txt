@@ -1,0 +1,11 @@
+D:\360Downloads\优课堂\setDatabase\bin\Debug\setDatabase.dll
+D:\360Downloads\优课堂\setDatabase\bin\Debug\setDatabase.pdb
+D:\360Downloads\优课堂\setDatabase\bin\Debug\Maticsoft.DBUtility.dll
+D:\360Downloads\优课堂\setDatabase\bin\Debug\System.Data.SQLite.dll
+D:\360Downloads\优课堂\setDatabase\bin\Debug\MySql.Data.dll
+D:\360Downloads\优课堂\setDatabase\bin\Debug\Maticsoft.DBUtility.pdb
+D:\360Downloads\优课堂\setDatabase\obj\Debug\setDatabase.csprojAssemblyReference.cache
+D:\360Downloads\优课堂\setDatabase\obj\Debug\setDatabase.csproj.CoreCompileInputs.cache
+D:\360Downloads\优课堂\setDatabase\obj\Debug\setDatabase.csproj.CopyComplete
+D:\360Downloads\优课堂\setDatabase\obj\Debug\setDatabase.dll
+D:\360Downloads\优课堂\setDatabase\obj\Debug\setDatabase.pdb

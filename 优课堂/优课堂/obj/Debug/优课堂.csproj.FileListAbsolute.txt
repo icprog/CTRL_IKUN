@@ -1,0 +1,13 @@
+D:\360Downloads\优课堂\优课堂\bin\Debug\优课堂.exe
+D:\360Downloads\优课堂\优课堂\bin\Debug\优课堂.pdb
+D:\360Downloads\优课堂\优课堂\bin\Debug\CSkin.dll
+D:\360Downloads\优课堂\优课堂\bin\Debug\CSkin.xml
+D:\360Downloads\优课堂\优课堂\obj\Debug\优课堂.csprojAssemblyReference.cache
+D:\360Downloads\优课堂\优课堂\obj\Debug\优课堂.Form1.resources
+D:\360Downloads\优课堂\优课堂\obj\Debug\优课堂.Properties.Resources.resources
+D:\360Downloads\优课堂\优课堂\obj\Debug\优课堂.csproj.GenerateResource.cache
+D:\360Downloads\优课堂\优课堂\obj\Debug\优课堂.csproj.CoreCompileInputs.cache
+D:\360Downloads\优课堂\优课堂\obj\Debug\优课堂.csproj.CopyComplete
+D:\360Downloads\优课堂\优课堂\obj\Debug\优课堂.exe
+D:\360Downloads\优课堂\优课堂\obj\Debug\优课堂.pdb
+D:\360Downloads\优课堂\优课堂\bin\Debug\IrisSkin4.dll
