@@ -46,9 +46,10 @@ namespace 优课堂
 
         private void skinButton1_Click(object sender, EventArgs e)
         {
-            Student student = new Student();
+            Form form = new Student();
             this.Hide();
-            student.ShowDialog();
+            form.ShowDialog();
+            Application.ExitThread();
         }
     }
 }

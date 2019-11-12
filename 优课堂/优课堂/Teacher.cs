@@ -11,6 +11,7 @@ namespace 优课堂
 {
     public partial class Teacher : Form
     {
+        int t = 0;
         public Teacher()
         {
             InitializeComponent();
@@ -18,22 +19,26 @@ namespace 优课堂
 
         private void skinButton1_Click(object sender, EventArgs e)
         {
-            User_list user_List = new User_list();
-            string sql = string.Format("userName='{0}' and userPassword='{1}'", user.Text.ToString(), password.Text.ToString());
-            int t = user_List.GetRecordCount(sql);
+            string sql = string.Format("select * from User_Teacher where userName='{0}' and userPassword='{1}'", user.Text.ToString(), password.Text.ToString());
             if (skinCode1.CodeStr == skinWaterTextBox1.Text.ToString())
             {
-                if (t > 0)
+                if (selectData.table2(sql).Rows.Count > 0)
                 {
                     Teacher_zone User = new Teacher_zone(user.Text.ToString());
-                    User.Show();
-                    
+                    this.Hide();
+                    User.ShowDialog();
+                    Application.ExitThread();
                 }
                 else
                 {
+                    t++;
                     MessageBox.Show("用户名或密码错误!", "提示");
                     user.Text = "";
                     password.Text = "";
+                    if(t > 5)
+                    {
+                        MessageBox.Show("多次登录失败，可能不存在该用户");
+                    }
                 }
             }
             else
@@ -45,7 +50,7 @@ namespace 优课堂
 
         private void skinButton2_Click(object sender, EventArgs e)
         {
-            Student_ZC _ZC = new Student_ZC();
+            Teacher_ZC _ZC = new Teacher_ZC();
             this.Hide();
             _ZC.ShowDialog();
         }

@@ -86,7 +86,12 @@
     <Compile Include="Add_teacher.Designer.cs">
       <DependentUpon>Add_teacher.cs</DependentUpon>
     </Compile>
-    <Compile Include="dataName.cs" />
+    <Compile Include="attend_main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="attend_main.Designer.cs">
+      <DependentUpon>attend_main.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -120,12 +125,43 @@
     <Compile Include="Teacher.Designer.cs">
       <DependentUpon>Teacher.cs</DependentUpon>
     </Compile>
+    <Compile Include="Teacher_ZC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teacher_ZC.Designer.cs">
+      <DependentUpon>Teacher_ZC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Teacher_zone.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Teacher_zone.Designer.cs">
       <DependentUpon>Teacher_zone.cs</DependentUpon>
     </Compile>
+    <Compile Include="TF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TF.Designer.cs">
+      <DependentUpon>TF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TFlog.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TFlog.Designer.cs">
+      <DependentUpon>TFlog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TF_ZC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TF_ZC.Designer.cs">
+      <DependentUpon>TF_ZC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="updata_attend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="updata_attend.Designer.cs">
+      <DependentUpon>updata_attend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update.cs" />
     <EmbeddedResource Include="Add.resx">
       <DependentUpon>Add.cs</DependentUpon>
     </EmbeddedResource>
@@ -134,6 +170,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Add_teacher.resx">
       <DependentUpon>Add_teacher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="attend_main.resx">
+      <DependentUpon>attend_main.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -159,8 +198,23 @@
     <EmbeddedResource Include="Teacher.resx">
       <DependentUpon>Teacher.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Teacher_ZC.resx">
+      <DependentUpon>Teacher_ZC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Teacher_zone.resx">
       <DependentUpon>Teacher_zone.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TF.resx">
+      <DependentUpon>TF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TFlog.resx">
+      <DependentUpon>TFlog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TF_ZC.resx">
+      <DependentUpon>TF_ZC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="updata_attend.resx">
+      <DependentUpon>updata_attend.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="App.config" />
     <None Include="Properties\Settings.settings">
@@ -198,6 +252,9 @@
       <Project>{53995dbb-9836-4647-ad22-865884fdeb9e}</Project>
       <Name>Model</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

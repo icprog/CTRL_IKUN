@@ -9,10 +9,12 @@ using System.Windows.Forms;
 using System.Data.SqlClient;
 
 
+
 namespace 优课堂
 {
     public partial class Student : Form
     {
+        int t=0;
         public Student()
         {
             InitializeComponent();
@@ -28,14 +30,20 @@ namespace 优课堂
                 if (t > 0)
                 {
                     Student_user student_User = new Student_user(user.Text.ToString());
-                    student_User.Show();
-                    
+                    this.Hide();
+                    student_User.ShowDialog();
+                    Application.ExitThread();
                 }
                 else
                 {
+                    t++;
                     MessageBox.Show("用户名或密码错误!", "提示");
                     user.Text = "";
                     password.Text = "";
+                    if (t > 5)
+                    {
+                        MessageBox.Show("多次登录失败，可能不存在该用户");
+                    }
                 }
             }
             else

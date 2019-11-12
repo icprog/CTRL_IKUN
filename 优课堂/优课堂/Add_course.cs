@@ -47,7 +47,7 @@ namespace 优课堂
                 con.Open();
                 for (int i = 1; i < table.Rows.Count; i++)
                 {
-                    string sql = string.Format("insert into 地科院肖斌软件工程课程考勤表(学号,姓名,课程名,辅导员) values ('{0}','{1}','{2}','{3}')", table.Rows[i][0], table.Rows[i][1], table.Rows[i][2], table.Rows[i][3]);
+                    string sql = string.Format("insert into {4}{5}{6}课程考勤表(学号,姓名,课程名,辅导员) values ('{0}','{1}','{2}','{3}')", table.Rows[i][0], table.Rows[i][1], table.Rows[i][2], table.Rows[i][3], skinWaterTextBox1.Text.ToString(), skinWaterTextBox2.Text.ToString(), skinWaterTextBox3.Text.ToString());
                     SqlCommand cmd1 = new SqlCommand(sql, con);
                     cmd1.ExecuteNonQuery();
                 }
@@ -61,6 +61,18 @@ namespace 优课堂
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void skinButton2_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+        }
+
+        private void skinButton3_Click(object sender, EventArgs e)
+        {
+            DialogResult t = MessageBox.Show("确认退出程序", "提示", MessageBoxButtons.YesNo);
+            if (DialogResult.Yes == t)
+                Application.Exit();
         }
     }
 }

@@ -36,7 +36,10 @@ namespace 优课堂
             cmd1.ExecuteNonQuery();
             con.Close();
             MessageBox.Show("信息录入成功,请重新登录。");
+            
+            Student student = new Student();
             this.Close();
+            student.ShowDialog();
         }
     }
 }

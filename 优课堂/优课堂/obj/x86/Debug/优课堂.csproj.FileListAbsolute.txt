@@ -35,3 +35,9 @@ D:\360Downloads\优课堂\优课堂\obj\x86\Debug\优课堂.Teacher_zone.resourc
 D:\360Downloads\优课堂\优课堂\bin\x86\Debug\OpenExcel.dll
 D:\360Downloads\优课堂\优课堂\bin\x86\Debug\OpenExcel.pdb
 D:\360Downloads\优课堂\优课堂\obj\x86\Debug\优课堂.Add_course.resources
+D:\360Downloads\优课堂\优课堂\obj\x86\Debug\优课堂.attend_main.resources
+D:\360Downloads\优课堂\优课堂\obj\x86\Debug\优课堂.updata_attend.resources
+D:\360Downloads\优课堂\优课堂\obj\x86\Debug\优课堂.TF.resources
+D:\360Downloads\优课堂\优课堂\obj\x86\Debug\优课堂.TFlog.resources
+D:\360Downloads\优课堂\优课堂\obj\x86\Debug\优课堂.Teacher_ZC.resources
+D:\360Downloads\优课堂\优课堂\obj\x86\Debug\优课堂.TF_ZC.resources

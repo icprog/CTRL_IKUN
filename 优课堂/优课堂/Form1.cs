@@ -31,7 +31,7 @@ namespace 优课堂
                 skinDataGridView1.Rows.Add(Path.GetFileNameWithoutExtension(x));
             });
 
-            skinEngine.SkinFile = skins[25];
+            skinEngine.SkinFile = skins[38];
             skinEngine.Active = true;
         }
 
@@ -67,6 +67,14 @@ namespace 优课堂
             this.Hide();
             form.ShowDialog();
             Application.ExitThread();         
+        }
+
+        private void skinBotton_TF_Click(object sender, EventArgs e)
+        {
+            TFlog tF = new TFlog();
+            this.Hide();
+            tF.ShowDialog();
+            Application.ExitThread();
         }
     }
 }

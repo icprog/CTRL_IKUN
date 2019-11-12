@@ -36,9 +36,10 @@ namespace 优课堂
             }
             if (skinLabel1.Text == "点击添加个人信息")
             {
-                this.Close();
                 Add_teacher add = new Add_teacher(user);
-                add.Show();
+                this.Close();
+                add.ShowDialog();
+                
             }
 
         }
@@ -51,7 +52,7 @@ namespace 优课堂
 
         private void skinButton2_Click(object sender, EventArgs e)
         {
-            cbTablesName.Items.Clear();
+            skinComboBox1.Items.Clear();
             string cons = PubConstant.ConnectionString;
             SqlConnection con = new SqlConnection(cons);
             string sql = "select name from sysobjects where xtype='u' order by name";
@@ -59,11 +60,65 @@ namespace 优课堂
             SqlDataReader dr = null;
             con.Open();
             dr = cmd.ExecuteReader();
+            bool test = false; ;
             while (dr.Read())
             {
                 string str = dr["name"].ToString();
-                this.cbTablesName.Items.Add(str);
+                if (str.Contains(string.Format("{0}", skinLabel3.Text.ToString())) && str.Contains("课程考勤表"))
+                {
+                    int index = this.skinDataGridView1.Rows.Add();
+                    skinDataGridView1.Rows[index].Cells["Column1"].Value = str;
+                    test = true;
+                    skinComboBox1.Items.Add(str.ToString());
+                }
+                   
             }
+            if(test==false)
+            {
+                MessageBox.Show("请导入课程表");
+            }
+        }
+
+        private void skinButton3_Click(object sender, EventArgs e)
+        {
+            if (skinComboBox1.Text.ToString().Contains("考勤表"))
+            {
+                string time = dateTimePicker1.Text.ToString() + dateTimePicker1.Value.Hour.ToString();
+                attend_main _Main = new attend_main(skinComboBox1.Text.ToString(),time);
+                _Main.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("请选择课程。");
+            }
+        }
+
+        private void skinButton4_Click(object sender, EventArgs e)
+        {
+            if (skinComboBox1.Text.ToString().Contains("考勤表"))
+            {
+                updata_attend updata_Attend = new updata_attend(skinComboBox1.Text.ToString());
+                updata_Attend.ShowDialog();
+            }
+            else
+            {
+                MessageBox.Show("请选择课程。");
+            }
+        }
+
+        private void skinButton6_Click(object sender, EventArgs e)
+        {
+            Form form = new Form1();
+            this.Hide();
+            form.ShowDialog();
+            Application.ExitThread();
+        }
+
+        private void skinButton5_Click(object sender, EventArgs e)
+        {
+            DialogResult t = MessageBox.Show("确认退出程序", "提示", MessageBoxButtons.YesNo);
+            if (DialogResult.Yes == t)
+                Application.Exit();
         }
     }
 }

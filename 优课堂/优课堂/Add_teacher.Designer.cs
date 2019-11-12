@@ -129,7 +129,7 @@
             this.Controls.Add(this.skinLabel2);
             this.Controls.Add(this.skinLabel1);
             this.Name = "Add_teacher";
-            this.Text = "Add_teacher";
+            this.Text = "第一次登录，请完善个人信息";
             this.ResumeLayout(false);
             this.PerformLayout();
 
